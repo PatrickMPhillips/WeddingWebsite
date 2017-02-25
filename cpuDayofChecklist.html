@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="wedding.css">
+	<title>Day of Checklist</title>
+	<script
+src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDNQL2Qoc0HxsUZJwcLCK8zCnpitRkkDRo&sensor=true">
+
+function initialize() {
+	if (GBrowserIsCompatible()) {
+        var map = new GMap2(document.getElementById("map_canvas"));
+		var point = new GLatLng(51.55448, -0.10864);
+        map.setCenter(point, 15);
+        map.setUIToDefault();
+		map.setMapType(G_NORMAL_MAP);
+		var marker = new GMarker(point);
+ 		map.addOverlay(marker);
+		GEvent.addListener(marker, "click", function() {marker.openInfoWindowHtml('<h3>Emirates Stadium</h3>Home to Arsenal FC<br /><br /><a href="http://maps.google.com/maps?saddr=&daddr=' + point.toUrlValue() + '" target ="_blank">Get Directions<\/a>');});
+
+	}
+}
+	
+window.onload = initialize;
+window.onunload = GUnload;
+</script>
+</head>
+<body>
+<div id="navigation">
+	
+	<a href="index.html">Home</a>
+	<a href="cpuTableofContents.html">Table of Contents</a>
+	<a href="cpuAboutUs.html">About Us</a>
+	<a href="cpuDayofChecklist.html">Day of Checklist</a>
+	<a href="cpuOutofTowners.html">Out of Towners</a>
+	<a href="cpuWeddingInfo.html">Wedding Info</a>
+	
+</div>
+<br>
+<br>
+<br>
+<div><img class="TOC" src="Images\DayofChecklistButton.jpg"></div>
+
+
+
+<h1>Wedding Schedule</h1>
+
+<ul class="text">
+<li>8:00 am  Girls meet at the Waldorf Astoria hotel to get their hair and makeup done
+<li>1:00 pm  The wedding party arrives at Rockefeller Chapel
+<li>1:30 guests arrive at Rockefeller Chapel on the University of Chicago campus.
+</ul>
+		
+<div id="googleMap" style="display:block; width:250px;height:150px;margin-left:250px;"><iframe width="350" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Rockefeller+Memorial+Chapel,+5850+S+Woodlawn+Ave,+Chicago,+IL&amp;aq=0&amp;oq=rockefell&amp;sll=39.739318,-89.266507&amp;sspn=9.660779,18.193359&amp;ie=UTF8&amp;hq=Rockefeller+Memorial+Chapel,&amp;hnear=5850+S+Woodlawn+Ave,+Chicago,+Cook,+Illinois+60637&amp;t=m&amp;ll=41.788489,-87.597061&amp;spn=0.006295,0.006295&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Rockefeller+Memorial+Chapel,+5850+S+Woodlawn+Ave,+Chicago,+IL&amp;aq=0&amp;oq=rockefell&amp;sll=39.739318,-89.266507&amp;sspn=9.660779,18.193359&amp;ie=UTF8&amp;hq=Rockefeller+Memorial+Chapel,&amp;hnear=5850+S+Woodlawn+Ave,+Chicago,+Cook,+Illinois+60637&amp;t=m&amp;ll=41.788489,-87.597061&amp;spn=0.006295,0.006295" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+</div>
+<br clear="all">
+<br>
+<br>
+<br>
+<br>
+<br><br><br><br>
+<div>
+<ul class="text">
+<li>2:00 p.m. Wedding ceremony begins
+<li>2:45 p.m. Wedding ceremony ends.  Guests return to the city - Wedding party takes photos
+<li>6:00 p.m. Cocktail hour begins
+<li>7:00 p.m. Dinner begins
+<li>12:00 a.m. Reception ends
+<li>12:30 a.m. Post-reception drinks at the hotel bar
+</ul>
+</div>
+<a class="return" href="cpuTableofContents.html"><p class="return">Return to the Table of Contents</p></a>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

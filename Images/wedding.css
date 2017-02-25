@@ -1,0 +1,44 @@
+* {
+	
+	padding:0px;
+	margin:0px;
+	 
+}
+
+a img{
+	border:none
+}
+
+
+#homeback{
+	margin:auto;
+	height:100%;
+	width:100%;
+	display:inline;
+	margin-top:-2%;
+	position:static;
+}
+
+#TOCButton {
+	height=250px;
+	width=1200px;
+	display:block-inline;
+	
+	float:right;
+	z-index:1;
+	border:none;
+}
+
+.Siteback{
+	background-image:"C:\Users\P\Downloads\Desktop\Website";
+	height:50%;
+	width:50%;
+	z-index:0;
+	position:fixed;
+	margin: 12% 34% 38% 16%;
+	opacity:.2;
+	filter:alpha(opacity=20);
+}
+
+.left{
+	
